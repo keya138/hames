@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ground Kings Ltd.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!-- Enable smooth scrolling via CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="logo">
+      <img src="images/logo3.png" alt="Ground Kings Ltd. Logo" class="logo-img">
+      <h1 class="logo-title">Ground Kings Ltd.</h1>
+    </div>
+
+    <!-- ✅ Fixed: Removed nested nav tag -->
+    <nav>
+      <ul>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    </nav>
+  </header>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background-color: #007b5e;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #005f47;
+    }
+
+    .whatsapp-button {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .whatsapp-button a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .whatsapp-button a:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-section">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="whatsapp-button">
+      <a
+        href="https://wa.me/254728479651?text=Hello!%20I'm%20interested%20in%20learning%20more%20about%20your%20services."
+        target="_blank"
+      >
+        📞 Contact Us on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo & Short Description -->
+        <div class="footer-logo">
+            <a href="index.html" class="logo">
+  <img src="images/logo3.png" alt="Ground Kings Ltd." style="height: 50px;">
+</a>
+            <p>Wired For Exellence.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-media">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="newsletter">
+            <h4>Subscribe to Our Newsletter</h4>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+  <!-- Optional: Add script for active link switching -->
+  <script>
+    // Highlight active navbar link on click
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
+  <!-- Slideshow Auto Scroll -->
+  <script>
+    window.addEventListener('load', () => {
+      const track = document.getElementById('slidesTrack');
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      if (!track || !slides.length) return;
+
+      function autoScrollSlides() {
+        const slideWidth = slides[0].offsetWidth;
+        currentSlide = (currentSlide + 1) % slides.length;
+        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+      }
+
+      setInterval(autoScrollSlides, 5000);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ground Kings Ltd.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!-- Enable smooth scrolling via CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="logo">
+      <img src="images/logo3.png" alt="Ground Kings Ltd. Logo" class="logo-img">
+      <h1 class="logo-title">Ground Kings Ltd.</h1>
+    </div>
+
+    <!-- ✅ Fixed: Removed nested nav tag -->
+    <nav>
+      <ul>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+<section class="about-section" id="about">
+
+  <!-- Overview Title -->
+  <div class="section-heading">
+    <h1>Overview</h1>
+  </div>
+
+  <!-- About Text -->
+  <div class="about-text">
+    <h2>About Us</h2>
+    <h2>We are one of the most renowned specialists in electrical connections and micro-service tasks in Kenya</h2>
+    
+    <p>
+      Ground Kings Electricals began as a specialist in electrical connections and micro-service tasks. Over time, we expanded our expertise to meet the growing needs of clients by becoming a comprehensive construction and finishing solutions provider.<br><br>
+      Our team of skilled professionals is committed to ensuring safety, precision, and customer satisfaction in every project we undertake.<br><br>
+      Today, we deliver end-to-end building services — from structural works and installations to final finishing and interior design.<br><br>
+      Our commitment is to make the construction journey simpler, faster, and stress-free for homeowners, developers, and businesses.
+    </p>
+  </div>
+
+  <!-- About Image -->
+  <div class="about-image">
+    <img src="images/profile.jpg" alt="Workers performing construction tasks on-site.">
+  </div>
+
+</section>
+<section class="about-section" id="about">
+
+  
+
+  <!-- About Text -->
+  <div class="about-text">
+    <h2>About Us</h2>
+    <h2>Services Offered</h2>
+    
+    <p>
+      We	provide	comprehensive	construction	and	finishing	solutions, including:
+ 	Construction & Structural Works
+Foundations, walls, roofing, and full structural integrity.
+ 	Electrical Installations
+Safe wiring, energy-efficient systems, and modern smart
+solutions.
+ 	Plumbing Solutions
+Complete water, piping, and drainage systems for residential and commercial buildings.
+ 	Lighting & Interior Design
+Aesthetic and functional lighting concepts, tailored to enhance interiors.
+ 	Tiling & Finishing
+Flooring, wall tiling, and detail-oriented finishes for a polished
+look.
+
+
+    </p>
+  </div>
+
+  <!-- About Image -->
+  <div class="about-image">
+    <img src="images/int8.jpeg" alt="Workers performing construction tasks on-site.">
+  </div>
+
+</section>
+<section class="about-section" id="about">
+
+  
+
+
+  
+
+</section>
+<section class="about-section" id="about">
+
+  
+<!-- About Image -->
+  <div class="about-image">
+    <img src="images/project 2.jpeg" alt="Workers performing construction tasks on-site.">
+  </div>
+  <!-- About Text -->
+  <div class="about-text">
+    <h2>About Us</h2>
+    <h2>Mission</h2>
+    <p>
+     To provide innovative, safe, and reliable construction solutions that deliver excellence from foundation to finishing.
+    </p>
+    <h2>Vission</h2>
+    <p>
+     To become the leading one-stop construction and finishing company in the region[AFRICA], trusted for integrity, innovation, and quality.
+    </p>
+     <h2>Core Values</h2>
+     <p>
+      	Excellence – Striving for the highest standards in every project.
+ 	Integrity – Transparent, honest, and reliable in all dealings.
+ 	Innovation – Using modern methods and technologies.
+ 	Safety – Prioritizing safety for workers, clients, and communities.
+ 	Customer-Centricity – Tailoring solutions to client needs.
+ 	Sustainability – Promoting eco-friendly and lasting solutions.
+
+    </p>
+  </div>
+
+  
+
+</section>
+
+  <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <!-- Logo & Short Description -->
+        <div class="footer-logo">
+            <a href="index.html" class="logo">
+  <img src="images/logo3.png" alt="Ground Kings Ltd." style="height: 50px;">
+</a>
+            <p>Wired For Exellence.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-media">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-instagram-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-twitter-fill"></i></a>
+                <a href="#" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="newsletter">
+            <h4>Subscribe to Our Newsletter</h4>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+  <!-- Optional: Add script for active link switching -->
+  <script>
+    // Highlight active navbar link on click
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+
+  <!-- Slideshow Auto Scroll -->
+  <script>
+    window.addEventListener('load', () => {
+      const track = document.getElementById('slidesTrack');
+      const slides = document.querySelectorAll('.slide');
+      let currentSlide = 0;
+
+      if (!track || !slides.length) return;
+
+      function autoScrollSlides() {
+        const slideWidth = slides[0].offsetWidth;
+        currentSlide = (currentSlide + 1) % slides.length;
+        track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
+      }
+
+      setInterval(autoScrollSlides, 5000);
+    });
+  </script>
+
+</body>
+</html>
+
